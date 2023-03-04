@@ -1,0 +1,107 @@
+body {
+    /* min-height: 3000px; */
+}
+
+.bg-nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.bg-nav .navbar-nav a.nav-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+.bg-nav .navbar-nav a.nav-link:hover {
+    /* color: blue; */
+    color: var(--bs-yellow);
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* KOLABORASI */
+h2.judul::after {
+    border-bottom: 10px solid var(--bs-danger);
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    content: "";
+    border-radius: 100px;
+}
+
+.kolaborasi img {
+    max-height: 150px;
+    max-width: 100px;
+}
+
+/* KEPERCAYAAN */
+.kepercayaan {
+    background-color: #395b64;
+    color: var(--bs-white);
+}
+
+/* CARD */
+.blog {
+    background-color: #395b64;
+}
+
+.blog a {
+    text-decoration: none;
+}
+
+.blog a:hover {
+    color: blue;
+}
+
+.blog-info {
+    color: #666;
+    position: relative;
+}
+
+.blog .blog-info img {
+    width: 50px;
+    border-radius: 100%;
+    float: left;
+}
+
+
+.blog-info a {
+    margin-left: 5px;
+}
+
+.blog-info span {
+    margin-left: 15px;
+    font-size: 12px;
+    /* padding: 15px; */
+}
+
+/* LINKS */
+.links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: var(--bs-pink);
+    transition: 0.5s;
+}
+
+/* Copyright */
+.copyright a {
+    text-decoration: none;
+}
+
+
+.footer {
+    background: linear-gradient(169deg, rgb(65, 80, 95) 33.05%, rgb(36, 37, 38) 100.00%);
+}

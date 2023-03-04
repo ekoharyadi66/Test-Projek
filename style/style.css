@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Inter&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Mouse+Memoirs&family=Noto+Sans+Tagbanwa&family=Open+Sans&family=Oswald:wght@600&family=Roboto:ital,wght@0,100;0,300;1,300&family=Ubuntu:wght@300&family=Uchen&display=swap');
+
+/* $font_weight: ("light" : 300,
+    "reguler" : 400,
+    "bold" : 700,
+); */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Merriweather', serif;
+}
+
+:root {
+    --primary_bg: #F9F8F4;
+    --first: #FBF4E2;
+    --button_color: #B4D51E;
+    --accen: #463C74;
+    --gelap: #a0be18;
+}
+
+body {
+    background-color: var(--primary_bg);
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.input-group {
+    width: 50% !important;
+}
+
+/* SIZE LARGE LG */
+@media (max-width:960px) {
+    .input-group {
+        width: 100% !important;
+    }
+}
+
+/* NAVBAR */
+.navbar .navbar-brand {
+    color: var(--accen);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navbar .navbar-brand span {
+    color: var(--button_color);
+}
+
+.navbar button,
+.humberger {
+    color: #463C74;
+    background-color: var(--gelap);
+}
+
+.navbar .nav-item i {
+    font-size: 25px;
+}
+
+
+/* BUTTON NAVBAR */
+a.btn-second {
+    /* Fungsi IMPORTANT agar benar2 menggunakan padding jika tidak bisa di ubah */
+    padding: 12px 24px !important;
+    border-radius: 8px;
+    color: var(--button_color);
+    border: 1px solid var(--button_color);
+}
+
+a.btn-second:hover {
+    background-color: var(--button_color);
+    color: #fff;
+    border: none;
+    border: 1px solid var(--button_color);
+}
+
+a.btn-first {
+    padding: 12px 24px !important;
+    border-radius: 8px;
+    background-color: var(--button_color);
+    color: #fff;
+    /* border: 1px solid var(--button_color); */
+}
+
+a.btn-first:hover {
+    background-color: var(--gelap);
+    color: rgb(211, 210, 210);
+    /* border: none; */
+}
+
+
+/* MENU WRAPPER */
+.menu-wrapper {
+    margin-top: 120px;
+}
+
+.menu-wrapper a {
+    /* 0 = atas bawah  20 = kiri kanan*/
+    margin: 0 25px;
+}
+
+/* CAROSEL */
+.header {
+    margin-top: 180px;
+}
+
+/* SIZE MEDIUM MD */
+@media (max-width:768px) {
+    .header {
+        margin-top: 150px;
+    }
+}
+
+/* POPULER */
+.populer {
+    margin-top: 100px;
+}
+
+.populer .title,
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accen);
+}
+
+@media (max-width:576px) {
+
+    .populer .title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:576px) {
+
+    .price {
+        font-size: 12px;
+    }
+}
+
+.populer .rating i {
+    font-size: 20px;
+    color: var(--button_color);
+}
+
+.populer .btn-cart {
+    padding: 8px 10px;
+    background-color: var(--button_color);
+    border-radius: 8px;
+    color: var(--first);
+}
+
+@media (max-width:576px) {
+    .populer .btn-cart {
+        padding: 5px 5px;
+    }
+}
+
+.populer .btn-cart:hover {
+    background-color: var(--gelap);
+}
+
+.populer .btn-cart i {
+    font-size: 25px;
+}
+
+@media (max-width:576px) {
+    .populer .btn-cart i {
+        font-size: 16px;
+    }
+}
+
+/* SUBSCRIBE */
+.subscribe {
+    margin-top: 100px;
+}
+
+.subscribe .container {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.subscribe .container .col-sub {
+    padding: 120px 0;
+}
+
+/* TESTIMONIAL */
+.testimoni {
+    margin-top: 100px;
+}
+
+.testimoni .card {
+    position: relative;
+    border: 2px solid var(--button_color);
+    border-radius: 10px;
+}
+
+.testimoni img {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimoni i {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    font-size: 70px;
+    color: var(--button_color);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 100px;
+    background-color: var(--first);
+}
+
+footer .row-content,
+h1.logo-brand {
+    font-size: 30px;
+    color: var(--accen);
+}
+
+footer .row-content,
+h1.logo-brand span {
+    color: var(--button_color);
+}
+
+footer .row-content,
+.logo-brand h3 {
+    font-size: 15px;
+    color: var(--accen);
+}
+
+footer .row-copy i {
+    font-size: 25px;
+    color: var(--button_color);
+}
